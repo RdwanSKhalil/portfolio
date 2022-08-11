@@ -1,0 +1,179 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+// Home sass
+#nav-bar{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background: $deepBlue;
+    #logo{
+        height: 25px;
+    }
+    ul{
+        width: 100%;
+        text-align: left;
+    }
+    li{
+        display: inline-block;
+        padding: 10px 10px;
+        &:hover:not(#logo){
+            background-color: lighten($deepBlue,10);
+            a{
+                font-size: 24px;
+            }
+          }
+    }
+    a{
+        text-decoration: none;
+        color: whitesmoke;
+        display: block;
+        font-size: 22px;
+    }
+}
+
+.banner{
+    top: 48px;
+    color:white;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    #banner-heading{
+        position: absolute;
+        top: 110px;
+        text-align: right;
+        width: 100%;
+        span{
+            display: block;
+            margin-right: 42%;
+            white-space: nowrap;
+            font-size: 60px;
+            margin-bottom: 50px;
+        }
+        #Title{
+            margin-right: 26%;
+            font-weight: bolder;
+        }
+    }
+}
+#projects{
+    padding: 10px 10px;
+    background-color: $deepBlue;
+    border-radius: 30px;
+    color: white;
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    h2{
+        border-bottom: 1px white solid;
+    }
+}
+// End of home sass
+
+// Contact sass
+#form-div{
+    background: $deepBlue;
+    color: white;
+    border-radius: 20px;
+    padding: 20px 60px;
+    position: absolute;
+    top: 15%;
+    left: 37%;
+    justify-content: center;
+    text-align: center;
+    img{
+        position: absolute;
+        right: 105%;
+        bottom: 43%;
+        height: 65%;
+    }
+    h1{
+        display: block;
+        font-weight: bolder;
+        border-bottom: 3px ridge white;
+        border-radius: 5px;
+    }
+    input{
+        display: block;
+        margin-left: 35px;
+        margin-bottom: 10px;
+        border-radius: 6px;
+        height: 18px;
+    }
+    input[type="submit"]{
+        width: 70%;
+        height: 40px;
+        color: white;
+        background-color: $deepBlue;
+        font-size: larger;
+        margin-top: 25px;
+        border: none;
+        &:hover{
+            font-size: 24px;
+        }
+    }
+    textarea{
+        border-radius: 10px;
+    }
+    label{
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+// end of contact sass
+
+// start of about sass
+#about{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    background-color: $deepBlue;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 100%;
+    h1{
+        border-bottom: 3px ridge white;
+        border-radius: 5px;
+    }
+    h2{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    p{
+        word-spacing: 0.8px;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    ul{
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    li{
+        display: inline-block;
+        list-style-type: circle;
+        padding: 15px;
+    }
+    table, th, td{
+        border: 2px solid black;
+        border-collapse: collapse;
+    } 
+    table{
+        color: black;
+        width: 50%;
+        position: relative;
+        left: 25%;
+        justify-content: center;
+        text-align: center;
+        background-color: white;
+    }
+}

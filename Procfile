@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 public/layouts/
+web: vendor/bin/heroku-php-apache2 public/views/layouts/
